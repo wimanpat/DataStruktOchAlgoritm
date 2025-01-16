@@ -1,8 +1,8 @@
-public class Clothing {
+abstract class Clothing {
 
     String brand;
     String color;
-    String price;
+    double price;
 
     public String getBrand() {
         return brand;
@@ -20,11 +20,11 @@ public class Clothing {
         this.color = color;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 }
