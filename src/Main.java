@@ -3,6 +3,35 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
+        String [] testData = {"Pat", "Ruuben", "Kimi", "Wille"};
+        String [] sortedData = { "Robin", "Kimi","Matt", "Wille"};
+
+        Person p1 = new Person(testData[0]);
+        Person p2 = new Person(testData[1],p1);
+        Person p3 = new Person(testData[2],p2);
+        Person p4 = new Person(testData[3],p3);
+
+        System.out.println(p4.getName());
+        Person current = p4;
+        while (current!= null) {
+
+            System.out.println(current.getName());
+            current = current.next;
+        }
+
+        StringArray names = new StringArray(sortedData);
+        System.out.println(names.toString());
+        names.add("Gollum");
+        System.out.println(names.toString());
+        names.reverse();
+        System.out.println(names.toString());
+
+        System.exit(0);
+       // testa loopa olika tidkomplexitet
+       new BigO();
+
+
+/*
         Calculator calc = new Calculator();
 
         System.out.println(calc.multiply(2,5));
@@ -66,5 +95,5 @@ public class Main {
         System.out.println(shirtInfo);
 
 
-
+*/
     }}
