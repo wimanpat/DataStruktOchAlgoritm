@@ -1,9 +1,11 @@
 public class Person {
     String name;
+    int rank;
     //Person next = null;
 
-    public Person(String name) {
+    public Person(String name, int rank) {
         this.name = name;
+        this.rank = rank;
     }
 
     /*public Person(String name, Person next) {
@@ -15,7 +17,10 @@ public class Person {
         return name;
     }
 
+    public int getRank() {
+        return rank;
     }
+}
     /*public Person getNext() {
     return next;
     }*/
