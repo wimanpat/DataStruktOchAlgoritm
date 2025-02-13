@@ -4,7 +4,7 @@ public class StringArray {
     String[] values;
     public StringArray(String[] values) {
         System.out.println("new stringArray");
-        this.values = values;
+        this.values = values.clone();
 
     }
     public void add(String value) {
@@ -27,5 +27,9 @@ public class StringArray {
    }
     public String toString() {
         return Arrays.toString(values);
+    }
+
+    public String[] getValues() {
+        return values;
     }
 }
